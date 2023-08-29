@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\MediatorFromScratch.DependencyInjection\MediatorFromScratch.DependencyInjection.csproj" />
     <ProjectReference Include="..\MediatorFromScratch\MediatorFromScratch.csproj" />
   </ItemGroup>
 
