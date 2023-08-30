@@ -30,6 +30,7 @@ internal class Program
         var mediator = serviceProviders.GetRequiredService<IMediator>();
         await mediator.SendAsync(request);
 
-        var result = mediator.SendAsync(new GiveMeAValueRequest());
+        var result = await mediator.SendAsync(new GiveMeAValueRequest());
+        Console.WriteLine(result);
     }
 }
